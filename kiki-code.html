@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // Equation is °C = 5/9 (°F - 32).
+      let degFahren = prompt("Enter the degrees in Fahrenheit");
+      let degCel;
+      degCel = (5 / 9) * (degFahren - 32);
+      let msg = degFahren + "\xB0 Fahrenheit is " + degCel + "\xB0 ";      if (degFahren < 69) {
+        alert(msg + "\n Oh that's cold!");
+      } else if (degFahren > 69 && degFahren < 83) {
+        alert(msg + "\n Temperature is just right!");
+      } else {
+        alert(msg + "\n Its way too hot!");
+      }
+    </script>
+  </body>
+</html>
