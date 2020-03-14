@@ -1,3 +1,6 @@
+// This code can be viewed online at:
+// https://github.com/jlthompson76/temperature-converter/blob/master/script.js
+
 function tempConverter() { // this function contains the entire temperature conversion script and runs the app when user clicks on button on homepage
 
     const name = prompt("What is your name?");
