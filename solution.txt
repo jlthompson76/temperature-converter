@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title></title>
+   </head>
+
+   <body>
+      <script>
+         // Equation is °C = 5/9 (°F - 32).
+         /**
+         let degFahren = prompt("Enter the degrees in Fahrenheit");
+         let degCel;
+         degCel = (5 / 9) * (degFahren - 32);
+         let msg = degFahren + "\xB0 Fahrenheit is " + degCel + "\xB0 ";      
+         if (degFahren < 69) {
+         alert(msg + "\n Oh that's cold!");
+         } else if (degFahren > 69 && degFahren < 83) {
+         alert(msg + "\n Temperature is just right!");
+         } else {
+         alert(msg + "\n Its way too hot!");
+         }
+         **/
+
+         // rewritten code using functions
+         const degFahren = prompt("Enter the degrees in Fahrenheit");
+         const degCel = toCelcius(degFahren);
+         fahrenMsg(degFahren);
+
+         // functions allow reusability:
+         const celciusWorcester = toCelcius(50);
+
+
+         // functions
+         function toCelcius(fahrenheit) {
+            const degCel = (5 / 9) * (fahrenheit - 32);
+            return degCel;
+         }
+
+         function fahrenMsg(fahrenheit) {
+            let msg = fahrenheit + "\xB0 Fahrenheit is " + degCel + "\xB0 Celcius";
+            if (fahrenheit < 69) {
+               alert(msg + "\n Oh that's cold!");
+            } else if (fahrenheit > 69 && fahrenheit < 83) {
+               alert(msg + "\n Temperature is just right!");
+            } else {
+               alert(msg + "\n Its way too hot!");
+            }
+         }
+
+      </script>
+   </body>
+
+</html>

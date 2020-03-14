@@ -1,21 +1,23 @@
 const name = prompt("What is your name?");
 
-const fahrenheit = prompt(`Hi, ${name}, please enter the temperature in Fahrenheit.`);
+const fahrenheit = prompt(`Hi, ${name}, please enter the .temperature in Fahrenheit and I will convert it into Celsius for you`);
 const celsius = toCelsius(fahrenheit);
-displayMessage(fahrenheit);
+displayConversion(fahrenheit);
 
 function toCelsius(fahrenheit) {
     return (fahrenheit - 32) * (5 / 9);
 }
 
-function displayMessage(fahrenheit) {
-    let message = `${fahrenheit} degrees Fahrenheit is ${celsius} degrees Celsius`;
-    alert(message);
+function displayConversion(fahrenheit) {
+    let conversion = `${fahrenheit}\xB0 Fahrenheit is ${celsius}\xB0 Celsius`;
+    alert(conversion);
+    let  message;
     if (fahrenheit <= 69) {
-        alert(`It's cold outside, ${name}! Don't forget your coat!`);
+        message = `It's cold outside, ${name}! Don't forget your coat!`;
     } else if (fahrenheit >= 84) {
-        alert(`It's hot outside, ${name}! Don't forget your sunscreen!`);
+       message = `It's hot outside, ${name}! Don't forget your sunscreen!`;
     } else {
-        alert(`It's perfect weather, ${name}, enjoy!`);
+        message = `It's perfect weather, ${name}, enjoy!`;
     }
-}
+    alert(message);
+  }
