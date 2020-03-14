@@ -16,7 +16,6 @@ body {
     color: #353634;
     font-size: xx-large;
     font-weight: bolder;
-    height: auto;
 }
 
 h1 {
@@ -24,14 +23,13 @@ h1 {
     margin: 0;
 }
 
-
 #converter {
+    background-image: linear-gradient(to bottom right, #cb373b, #ffc600, #4baeda);
     font-family: 'Open Sans', sans-serif;
     font-size: x-large;
-    padding: 25px 35px;
     border-radius: 25px;
-    background-image: linear-gradient(to bottom right, #cb373b, #ffc600, #4baeda);
     border: none;
+    padding: 25px 35px;
     margin: 25px;
 }
 
