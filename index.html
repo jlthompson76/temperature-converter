@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Temperature</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap" rel="stylesheet">
+        <title>Temperature Converter</title>
     </head>
     <body>
+        <div class="container">
+            <div class="header">
+                <h1>Temperature Converter</h1>
+            </div>
+            <div class="button">
+                <button id ="converter" onclick="tempConverter()">Is it Hot or Cold? Click Here to Find Out!</button>
+            </div>
+            <div class="images">
+                <div class="sun">
+                    <img src="./images/sun-1314953_640.png" alt="clip art of the sun" width=480px />
+                </div>
+                <div class="hot-cold">
+                    <img src="./images/temperature-157127_640.png" alt="clip art of two thermometers showing hot and cold" width=480px />
+                </div>
+            </div>
+        </div>
+
         <script src="script.js"></script>
+
     </body>
 </html>
